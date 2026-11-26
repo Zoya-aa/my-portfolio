@@ -395,3 +395,70 @@ footer {
     padding: 22px;
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-image img {
+        width: 240px;
+        height: 280px;
+    }
+
+    .about, .education, .skills, .projects, .contact {
+        padding: 60px 6%;
+    }
+
+    .education-box, .contact-box, .project-box {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-content h1 {
+        font-size: 34px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .home-image img {
+        width: 210px;
+        height: 260px;
+    }
+}
+
